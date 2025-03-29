@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYAN - Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahan CSS untuk memastikan hamburger menu berfungsi */
+        @media (max-width: 768px) {
+            .menu-toggle:checked ~ .nav-links {
+                left: 0;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--header-bg);
+                padding: 20px 0;
+                text-align: center;
+                transition: 0.3s;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            @media (max-width: 768px) {
+                .menu-toggle:checked ~ .nav-links {
+                    left: 0;
+                }
+                
+                .nav-links {
+                    position: fixed;
+                    top: 80px;
+                    left: -100%;
+                    width: 100%;
+                    background-color: var(--header-bg);
+                    padding: 20px 0;
+                    text-align: center;
+                    transition: 0.3s;
+                }
+                
+                .hamburger {
+                    display: block;
+                }
+            }
+            
+            /* Menyembunyikan checkbox */
+            .menu-toggle {
+                opacity: 0;
+                position: absolute;
+                z-index: -1;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">R</span>YAN
+                </a>
+            </div>
+            <nav>
+                <!-- Hidden checkbox to control mobile menu -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                
+                <!-- Hamburger icon -->
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="contact.html" class="cta-button">LETS' TALK</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="subtitle">RYAN ADI WICAKSONO</div>
+                        <h1>Hi! I'M RYAN</h1>
+                        <h2>I'M A DEVELOPER</h2>
+                        <p>
+                            Saya adalah seorang mahasiswa Teknik Informatika semester 4 di UMS, yang terjun ke dunia full-stack development dengan semangat untuk menciptakan inovasi di masa depan.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="contact.html" class="primary-button">
+                                Contact Person<i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link dribbble">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="#" class="social-link linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/nino.jpg" alt="Profile Image">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p>Latar belakang saya</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/code.jpg" alt="About Image">
+                    </div>
+                    <div class="about-text">
+                        <h3>Ryan Adi Wicaksono</h3>
+                        <p>
+                            Seorang mahasiswa Teknik Informatika semester 4 asal Klaten, Indonesia, dengan minat dan bakat di bidang Full Stack Development. Ryan memiliki ketertarikan besar dalam mengembangkan aplikasi dan sistem yang dapat berjalan di berbagai platform, baik di sisi front-end maupun back-end. Dengan keterampilan dalam berbagai bahasa pemrograman dan framework, Ryan memiliki kemampuan untuk merancang, mengembangkan, dan memelihara aplikasi web serta aplikasi berbasis server secara menyeluruh.
+                        </p>
+                        <p>
+                            Sebagai seorang Full Stack Developer, Ryan terus berusaha untuk memperdalam pengetahuan di berbagai bidang teknologi, termasuk HTML, CSS, JavaScript, Node.js, dan lainnya. Selain itu, dia juga aktif dalam mengikuti perkembangan terbaru dalam dunia pengembangan perangkat lunak, dengan fokus pada efisiensi dan pengalaman pengguna yang optimal.
+                        </p>
+                        <div class="skills">
+                            <div class="skill">
+                                <span>HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="portfolio.html" class="secondary-button">View My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Services</h2>
+                    <p>What I can do for you</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Saya memiliki pengalaman dalam pengembangan aplikasi web full-stack, mulai dari perancangan antarmuka pengguna (UI) hingga pengelolaan server dan database. Dengan menguasai teknologi terbaru seperti HTML, CSS, JavaScript, dan framework modern, saya dapat menciptakan situs web yang responsif dan fungsional untuk memenuhi kebutuhan pengguna.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Saya mengutamakan pengalaman pengguna yang optimal pada berbagai perangkat. Dengan menerapkan prinsip desain responsif, saya memastikan bahwa aplikasi atau situs web yang saya buat dapat diakses dengan baik di berbagai ukuran layar, mulai dari ponsel hingga desktop.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Saya fokus pada desain antarmuka yang intuitif dan pengalaman pengguna yang menyenangkan. Dengan mengutamakan prinsip desain yang sederhana dan efisien, saya menciptakan antarmuka yang mudah digunakan dan estetis, sehingga meningkatkan interaksi pengguna dengan aplikasi atau situs web yang saya bangun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">R</span>YAN
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="#about">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RYAN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

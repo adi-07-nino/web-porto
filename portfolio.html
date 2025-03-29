@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahan CSS untuk memastikan hamburger menu berfungsi */
+        @media (max-width: 768px) {
+            .menu-toggle:checked ~ .nav-links {
+                left: 0;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--header-bg);
+                padding: 20px 0;
+                text-align: center;
+                transition: 0.3s;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            @media (max-width: 768px) {
+                .menu-toggle:checked ~ .nav-links {
+                    left: 0;
+                }
+                
+                .nav-links {
+                    position: fixed;
+                    top: 80px;
+                    left: -100%;
+                    width: 100%;
+                    background-color: var(--header-bg);
+                    padding: 20px 0;
+                    text-align: center;
+                    transition: 0.3s;
+                }
+                
+                .hamburger {
+                    display: block;
+                }
+            }
+            
+            /* Menyembunyikan checkbox */
+            .menu-toggle {
+                opacity: 0;
+                position: absolute;
+                z-index: -1;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">R</span>YAN
+                </a>
+            </div>
+            <nav>
+                <!-- Hidden checkbox to control mobile menu -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                
+                <!-- Hamburger icon -->
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                
+                <!-- Navigation links -->
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#about">ABOUT ME</a></li>
+                    <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="cta">
+                <a href="contact.html" class="cta-button">LETS' TALK</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p>Lihat beberapa karya terbaru saya</p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Design</button>
+                    <button class="filter-btn" data-filter="app">App Development</button>
+                    <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="images/web1.png" alt="Project 1">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Website</h3>
+                                    <p>Web Design</p>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="images/web2.jpg" alt="Project 2">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>website</h3>
+                                    <p>Web Design</p>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="ui">
+                        <div class="portfolio-image">
+                            <img src="images/ui1.png" alt="Project 3">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Travel App Design</h3>
+                                    <p>UI/UX Design</p>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="images/web3.jpg" alt="Project 4">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Website</h3>
+                                    <p>Web Design</p>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="app">
+                        <div class="portfolio-image">
+                            <img src="images/ui3.jpg" alt="Project 5">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Bank App</h3>
+                                    <p>App Development</p>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="ui">
+                        <div class="portfolio-image">
+                            <img src="images/ui.jpg" alt="Project 6">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-info">
+                                    <h3>Travel Platform UI</h3>
+                                    <p>UI/UX Design</p>
+                                    <a href="#" class="portfolio-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Mari Bekerja Sama</h2>
+                    <p>Memiliki proyek yang ingin dikerjakan? Saya tersedia untuk pekerjaan freelance.</p>
+                    <a href="contact.html" class="primary-button">Contact Person</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">R</span>YAN
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="portfolio.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RYAN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
